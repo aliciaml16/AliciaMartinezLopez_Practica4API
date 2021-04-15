@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Proyecto 4 - API's</title>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <script src='main.js' async></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Disfruta de tu propio cine</h1>
+        <div class="video-container">
+            <video id="video" src=""></video>
+            <h3 id="videoTexto">Sube tu vídeo para empezar</h3>
+        </div>
+        <input type="file" name="movie[]" onchange="handleFileSelect(event)" />
+        <div class="botones">
+            <button onclick="playVideo()">REPRODUCIR</button>
+            <button onclick="pauseVideo()">PAUSA</button>
+            <button onclick="subirVolumen()">+ VOLUMEN</button>
+            <button onclick="bajarVolumen()">- VOLUMEN</button>
+        </div>
+        <output id="list"></output>
+    </div>
+</body>
+
+</html>
